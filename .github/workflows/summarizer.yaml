@@ -17,9 +17,10 @@ jobs:
           python-version: "3.x"
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Run summarizer.py
-        run: python summarizer.py
+      - name: Run summarizer2.py
+        run: python summarizer2.py
         env:
           OPEN_AI_TOKEN: ${{ secrets.OPEN_AI_TOKEN }}
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_POST_CHANNEL_ID: ${{ secrets.SLACK_POST_CHANNEL_ID }}
+          SLACK_READ_CHANNEL_ID: ${{ secrets.SLACK_READ_CHANNEL_ID }}
