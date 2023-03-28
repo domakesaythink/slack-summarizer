@@ -96,6 +96,7 @@ def summarize(text: str, language: str = "Japanese"):
                 f"Please meaning summarize the following chat log to flat bullet list in {language}.",
                 "It isn't line by line summary.",
                 "Do not include greeting/salutation/polite expressions in summary.",
+                "Please write it in narrative style.",
                 "With make it easier to read."
                 f"Write in {language}.", "", text
             ])
