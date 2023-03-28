@@ -74,7 +74,7 @@ def summarize(text: str, language: str = "Japanese"):
         >>> summarize("Alice: Hi\nBob: Hello\nAlice: How are you?\nBob: I'm doing well, thanks.")
         '- Alice greeted Bob.\n- Bob responded with a greeting.\n- Alice asked how Bob was doing.\n- Bob replied that he was doing well.'
     """
-    openai.api_key = OPENAI_API_KEY
+    openai.api_key = OPEN_AI_TOKEN
     response = openai.ChatCompletion.create(
         model='gpt-3.5-turbo',
         temperature=0.3,
