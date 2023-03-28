@@ -30,7 +30,7 @@ def get_channel_text(channel_id, start_time, end_time):
         )
         messages = response['messages']
         text = ""
-        for message in messages:
+        for message in messages[::-1]:
             if "bot_id" in message or len(message["text"].strip()) == 0:
                 continue
             if 'text' in message:
