@@ -98,6 +98,7 @@ def summarize(text: str, language: str = "Japanese"):
                 "Do not include greeting/salutation/polite expressions in summary.",
                 "Please write it in narrative style.",
                 "Please write in a positive way.",
+                "ギャル語を混ぜてください.",
                 "With make it easier to read."
                 f"Write in {language}.", "", text
             ])
