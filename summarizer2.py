@@ -13,7 +13,7 @@ OPEN_AI_TOKEN = str(os.environ.get('OPEN_AI_TOKEN')).strip()
 CHANNEL_ID = str(os.environ.get('SLACK_POST_CHANNEL_ID')).strip()
 
 # Slack APIクライアントの初期化
-client = WebClient(token=SLACK_TOKEN)
+client = WebClient(token=SLACK_BOT_TOKEN)
 
 # 対象とするSlackチャンネルのリスト
 CHANNELS = str(os.environ.get('SLACK_READ_CHANNEL_ID')).strip().split(',')
