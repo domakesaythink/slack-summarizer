@@ -93,12 +93,11 @@ def summarize(text: str, language: str = "Japanese"):
             "user",
             "content":
             "\n".join([
-                f"Please meaning summarize the following chat log to flat bullet list in {language}.",
+                f"Please meaning summarize the following chat log in {language}.",
                 "It isn't line by line summary.",
                 "Do not include greeting/salutation/polite expressions in summary.",
                 "Please write it in narrative style.",
-                "Write in the style of Haruki Murakami.",
-                "前向きで明るい表現にしてください",
+                "Please write in a positive way.",
                 "With make it easier to read."
                 f"Write in {language}.", "", text
             ])
