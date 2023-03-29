@@ -89,7 +89,6 @@ def summarize(text: str, language: str = "Japanese"):
                 f'So, The assistant need to speak in {language}.',
             ])
         }, {
-            "title": "Chatログの{language}による要約",
             "role":
             "user",
             "content":
@@ -98,7 +97,7 @@ def summarize(text: str, language: str = "Japanese"):
                 "It isn't line by line summary.",
                 "Do not include greeting/salutation/polite expressions in summary.",
                 "Please write it in narrative style and dramatic way.",
-                "With make it easier to read."
+                "With make it easier to read within 140 characters."
                 f"Write in {language}.", "", text
             ])
         }])
