@@ -89,6 +89,7 @@ def summarize(text: str, language: str = "Japanese"):
                 f'So, The assistant need to speak in {language}.',
             ])
         }, {
+            "title": "Chatログの{language}による要約",
             "role":
             "user",
             "content":
