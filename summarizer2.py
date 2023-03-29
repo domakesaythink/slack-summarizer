@@ -102,7 +102,7 @@ def summarize(text: str, language: str = "Japanese"):
                 "Add words of encouragement to the end of the sentence according to the content of the summary so that you can spend a happy tomorrow. Also, prepare multiple patterns of words of encouragement each day and add them at random.
 
 ",
-                "Begin the sentence with the following words: やぁトビー！"
+                "Begin the sentence with the following words: Hi.tobee"
                 f"Write in {language}.", "", text
             ])
         }])
