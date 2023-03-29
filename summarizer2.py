@@ -99,10 +99,8 @@ def summarize(text: str, language: str = "Japanese"):
                 "Do not include greeting/salutation/polite expressions in summary.",
                 "Please write it in a friendly tone",
                 "With make it easier to read within 140 characters.",
-                "Add words of encouragement to the end of the sentence according to the content of the summary so that you can spend a happy tomorrow. Also, prepare multiple patterns of words of encouragement each day and add them at random.
-
-",
-                "Begin the sentence with the following words: Hi.tobee"
+                "Add words of encouragement to the end of the sentence according to the content of the summary so that you can spend a happy tomorrow. Also, prepare multiple patterns of words of encouragement each day and add them at random.",
+                "Begin the sentence with the following words: やぁトビー！"
                 f"Write in {language}.", "", text
             ])
         }])
