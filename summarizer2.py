@@ -124,7 +124,7 @@ def main():
         text = get_channel_text(channel_id, start_time, end_time)
         if text is not None:
             channel_name = get_channel_name(channel_id)
-            texts.append('<#' + channel_id + '> では今日こんなことがありました。 ')
+            texts.append('今日の <#' + channel_id + '> はこんな感じ。 ')
             texts.append(summarize(text))
             texts.append("\n")
 
