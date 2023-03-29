@@ -97,7 +97,7 @@ def summarize(text: str, language: str = "Japanese"):
                 "It isn't line by line summary.",
                 "Before you write the summary text, please write the title of about 10 words that represents the summary in a straight line with 「」 and put a new line in the back.",
                 "Do not include greeting/salutation/polite expressions in summary.",
-                "Please write it in a friendly, informal tone.",
+                "Please write it in a friendly, informal tone. Do not use Japanese honorifics.",
                 "With make it easier to read within 140 characters.",
                 "Add words of encouragement to the end of the sentence according to the content of the summary so that you can spend a happy tomorrow. Also, prepare multiple patterns of words of encouragement each day and add them at random.",
                 "Begin the sentence with the following words: やぁトビー！"
