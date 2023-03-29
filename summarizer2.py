@@ -98,7 +98,8 @@ def summarize(text: str, language: str = "Japanese"):
                 "Before you write the summary text, please write the title of about 10 words that represents the summary in a straight line with 「」 and put a new line in the back.",
                 "Do not include greeting/salutation/polite expressions in summary.",
                 "Please write it in a ladylike tone",
-                "With make it easier to read within 140 characters."
+                "With make it easier to read within 140 characters.",
+                "At the end of the sentence, please add words that will cheer you up so that you can have a good time tomorrow."
                 f"Write in {language}.", "", text
             ])
         }])
