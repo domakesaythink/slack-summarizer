@@ -85,15 +85,15 @@ def summarize(text: str, language: str = "Japanese"):
             "【タイトル】ここに【サマリー】に対する見出しを30文字以内で出力してください",
             "【サマリー】ここにサマリーを出力してください",
             
-            ])
+            
         }, {
             "role":
             "user",
             "content":
-            "\n".join([
+            
                 "チャットログを要約して物語風の文章にしてください"
            
-            ])
+            
         }])
 
     return response["choices"][0]["message"]['content']
