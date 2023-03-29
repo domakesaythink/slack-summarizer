@@ -82,24 +82,17 @@ def summarize(text: str, language: str = "Japanese"):
             "role":
             "system",
             "content":
-            "\n".join([
-                'The chat log format consists of one line per message in the format "Speaker: Message".',
-                "The `\\n` within the message represents a line break."
-                f'The user understands {language} only.',
-                f'So, The assistant need to speak in {language}.',
+            "【タイトル】ここに【サマリー】に対する見出しを30文字以内で出力してください",
+            "【サマリー】ここにサマリーを出力してください",
+            
             ])
         }, {
             "role":
             "user",
             "content":
             "\n".join([
-                f"Please meaning summarize the following chat log in {language}.",
-                "It isn't line by line summary.",
-                "At the beginning of the summary, please write a title that describes its content.",
-                "Do not include greeting/salutation/polite expressions in summary.",
-                "Please write it in narrative style and dramatic way.",
-                "With make it easier to read within 140 characters."
-                f"Write in {language}.", "", text
+                "チャットログを要約して物語風の文章にしてください"
+           
             ])
         }])
 
